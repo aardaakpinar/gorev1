@@ -2,12 +2,12 @@ train: data/train/images
 val: data/valid/images
 test: data/test/images
 
-nc: 5
-names: ['Trucks', 'UAI', 'UAP', 'car', 'person']
+nc: 6
+names: ['Trucks', 'UAI', 'UAP', 'bicycle', 'car', 'person']
 
 roboflow:
   workspace: nars-workspace
   project: test-2-tknfst
-  version: 1
+  version: 2
   license: MIT
-  url: https://universe.roboflow.com/nars-workspace/test-2-tknfst/dataset/1
+  url: https://universe.roboflow.com/nars-workspace/test-2-tknfst/dataset/2

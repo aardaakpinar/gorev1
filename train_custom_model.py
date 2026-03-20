@@ -10,8 +10,8 @@ def create_dataset_yaml():
         'train': 'data/train',
         'val': 'data/valid',
         'test': 'data/test',
-        'nc': 4,  # Sınıf sayısı
-        'names': ['Taşıt', 'İnsan', 'UAP', 'UAİ']
+        'nc': 6,  # Sınıf sayısı
+        'names': ['Trucks', 'UAI', 'UAP', 'bicycle', 'car', 'person']
     }
     
     with open('data.yaml', 'w') as f:
@@ -71,7 +71,6 @@ def train_custom_model():
             batch=16,                   # Batch size (GPU belleğine göre)
             patience=20,                # Early stopping
             save=True,                  # Modeli kaydet
-            project='runs/detect',      # Sonuç klasörü
             name='custom_drone_v1',     # Model adı
             lr0=0.001,                  # Learning rate
             momentum=0.937,             # Momentum
