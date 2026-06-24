@@ -161,7 +161,7 @@ def get_optimal_batch_size() -> int:
 
 def train_custom_model(
     data_yaml: str = "data/data.yaml",
-    model_name: str = "yolov8n.pt",
+    model_name: str = "yolo11n.pt",
     epochs: int = 100,
     imgsz: int = 640,
 ):
@@ -246,7 +246,6 @@ def train_custom_model(
         print("\nÇÖZÜM ÖNERİLERİ:")
         print("- batch size düşür")
         print("- imgsz=512 kullan")
-        print("- yolov8n.pt kullan")
 
     except Exception as error:
 
